@@ -1,6 +1,6 @@
 {
   "name": "@vedhae/cms-schema",
-  "version": "4.2.13",
+  "version": "4.2.14",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
