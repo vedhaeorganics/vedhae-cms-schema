@@ -44,8 +44,8 @@ export declare const ProductSchema: z.ZodEffects<z.ZodObject<{
     updatedAt: z.ZodNumber;
 }, "strip", z.ZodTypeAny, {
     title: string;
-    order: number;
     active: boolean;
+    order: number;
     imageLinks: {
         url: string;
         path: string;
@@ -74,8 +74,8 @@ export declare const ProductSchema: z.ZodEffects<z.ZodObject<{
     priceSubText?: string | undefined;
 }, {
     title: string;
-    order: number;
     active: boolean;
+    order: number;
     imageLinks: {
         url: string;
         path: string;
@@ -104,8 +104,8 @@ export declare const ProductSchema: z.ZodEffects<z.ZodObject<{
     priceSubText?: string | undefined;
 }>, {
     title: string;
-    order: number;
     active: boolean;
+    order: number;
     imageLinks: {
         url: string;
         path: string;
@@ -134,8 +134,8 @@ export declare const ProductSchema: z.ZodEffects<z.ZodObject<{
     priceSubText?: string | undefined;
 }, {
     title: string;
-    order: number;
     active: boolean;
+    order: number;
     imageLinks: {
         url: string;
         path: string;

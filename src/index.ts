@@ -8,6 +8,7 @@ export { HeroSectionSchema } from "./hero.schema.js";
 export { CardSectionSchema } from "./cardSection.schema.js";
 export { HomeDividerSchema } from "./homeDivider.schema.js";
 export { FooterSchema } from "./footer.schema.js";
+export { AnnouncementSchema } from "./announcement.schema.js";
 
 
 // Products
@@ -34,7 +35,7 @@ export type { HeroSection } from "./hero.schema.js";
 export type { CardSection } from "./cardSection.schema.js";
 export type { HomeDivider } from "./homeDivider.schema.js";
 export type { FooterSection } from "./footer.schema.js";
-
+export type { Announcement } from "./announcement.schema.js";
 
 // Products
 export type { Product } from "./product.schema.js";

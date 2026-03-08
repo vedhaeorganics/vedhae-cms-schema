@@ -14,11 +14,6 @@ export const HeroSectionSchema = z.object({
   ctaLink: z.string().min(1),
 
   imageLinks: z.array(ImageAssetSchema).default([]),
-
-  banner: z.object({
-    enabled: z.boolean().default(false),
-    text: z.string().min(1).optional(),
-  }).default({ enabled: false })
 });
 
 export type HeroSection = z.infer<typeof HeroSectionSchema>;

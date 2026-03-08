@@ -89,10 +89,10 @@ export declare const CardSectionSchema: z.ZodObject<{
     }>, "many">;
 }, "strip", z.ZodTypeAny, {
     title: string;
-    order: number;
     page: "home";
     section: "one" | "two";
     active: boolean;
+    order: number;
     items: {
         name: string;
         link: string;
@@ -106,10 +106,10 @@ export declare const CardSectionSchema: z.ZodObject<{
     }[];
 }, {
     title: string;
-    order: number;
     page: "home";
     section: "one" | "two";
     active: boolean;
+    order: number;
     items: {
         name: string;
         link: string;
