@@ -1,5 +1,11 @@
 import { z } from "zod";
 import { ImageAssetSchema } from "./image.schema.js";
+export const CustomerReviewSchema = z.object({
+    name: z.string().min(1),
+    date: z.string().min(1),
+    stars: z.number().min(0).max(5),
+    review: z.string().min(1),
+});
 /**
  * Product schema
  */
@@ -50,6 +56,10 @@ export const ProductSchema = z
     howToUseDescription: z.string().min(1),
     ingredientsTitle: z.string().min(1),
     ingredients: z.array(z.tuple([z.string(), z.string()])).min(1),
+    /* =========================
+       Reviews
+    ========================= */
+    reviews: z.array(CustomerReviewSchema).optional(),
     /* =========================
        System
     ========================= */

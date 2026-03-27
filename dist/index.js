@@ -9,7 +9,7 @@ export { HomeDividerSchema } from "./homeDivider.schema.js";
 export { FooterSchema } from "./footer.schema.js";
 export { AnnouncementSchema } from "./announcement.schema.js";
 // Products
-export { ProductSchema } from "./product.schema.js";
+export { ProductSchema, CustomerReviewSchema } from "./product.schema.js";
 export { ProductHeroSchema } from "./productHero.schema.js";
 // About
 export { AboutHeroSchema, AboutContentSchema, AboutImagesSchema, } from "./about.schema.js";
