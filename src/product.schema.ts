@@ -3,7 +3,7 @@ import { ImageAssetSchema } from "./image.schema.js";
 
 export const CustomerReviewSchema = z.object({
   name: z.string().min(1),
-  date: z.string().min(1),
+  date: z.string().optional(),
   stars: z.number().min(0).max(5),
   review: z.string().min(1),
 });

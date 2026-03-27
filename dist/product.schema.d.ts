@@ -1,19 +1,19 @@
 import { z } from "zod";
 export declare const CustomerReviewSchema: z.ZodObject<{
     name: z.ZodString;
-    date: z.ZodString;
+    date: z.ZodOptional<z.ZodString>;
     stars: z.ZodNumber;
     review: z.ZodString;
 }, "strip", z.ZodTypeAny, {
-    date: string;
     name: string;
     stars: number;
     review: string;
+    date?: string | undefined;
 }, {
-    date: string;
     name: string;
     stars: number;
     review: string;
+    date?: string | undefined;
 }>;
 export type CustomerReview = z.infer<typeof CustomerReviewSchema>;
 /**
@@ -57,19 +57,19 @@ export declare const ProductSchema: z.ZodEffects<z.ZodObject<{
     ingredients: z.ZodArray<z.ZodTuple<[z.ZodString, z.ZodString], null>, "many">;
     reviews: z.ZodOptional<z.ZodArray<z.ZodObject<{
         name: z.ZodString;
-        date: z.ZodString;
+        date: z.ZodOptional<z.ZodString>;
         stars: z.ZodNumber;
         review: z.ZodString;
     }, "strip", z.ZodTypeAny, {
-        date: string;
         name: string;
         stars: number;
         review: string;
+        date?: string | undefined;
     }, {
-        date: string;
         name: string;
         stars: number;
         review: string;
+        date?: string | undefined;
     }>, "many">>;
     active: z.ZodBoolean;
     order: z.ZodNumber;
@@ -106,10 +106,10 @@ export declare const ProductSchema: z.ZodEffects<z.ZodObject<{
     discountPercent?: number | undefined;
     priceSubText?: string | undefined;
     reviews?: {
-        date: string;
         name: string;
         stars: number;
         review: string;
+        date?: string | undefined;
     }[] | undefined;
 }, {
     title: string;
@@ -142,10 +142,10 @@ export declare const ProductSchema: z.ZodEffects<z.ZodObject<{
     discountPercent?: number | undefined;
     priceSubText?: string | undefined;
     reviews?: {
-        date: string;
         name: string;
         stars: number;
         review: string;
+        date?: string | undefined;
     }[] | undefined;
 }>, {
     title: string;
@@ -178,10 +178,10 @@ export declare const ProductSchema: z.ZodEffects<z.ZodObject<{
     discountPercent?: number | undefined;
     priceSubText?: string | undefined;
     reviews?: {
-        date: string;
         name: string;
         stars: number;
         review: string;
+        date?: string | undefined;
     }[] | undefined;
 }, {
     title: string;
@@ -214,10 +214,10 @@ export declare const ProductSchema: z.ZodEffects<z.ZodObject<{
     discountPercent?: number | undefined;
     priceSubText?: string | undefined;
     reviews?: {
-        date: string;
         name: string;
         stars: number;
         review: string;
+        date?: string | undefined;
     }[] | undefined;
 }>;
 export type Product = z.infer<typeof ProductSchema>;
