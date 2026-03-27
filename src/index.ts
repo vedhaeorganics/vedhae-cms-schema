@@ -12,7 +12,7 @@ export { AnnouncementSchema } from "./announcement.schema.js";
 
 
 // Products
-export { ProductSchema } from "./product.schema.js";
+export { ProductSchema, CustomerReviewSchema } from "./product.schema.js";
 export { ProductHeroSchema } from "./productHero.schema.js";
 
 
@@ -38,7 +38,7 @@ export type { FooterSection } from "./footer.schema.js";
 export type { Announcement } from "./announcement.schema.js";
 
 // Products
-export type { Product } from "./product.schema.js";
+export type { Product, CustomerReview } from "./product.schema.js";
 export type { ProductHero } from "./productHero.schema.js";
 
 
